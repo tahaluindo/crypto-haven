@@ -1,0 +1,1438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --main-bg: #212121;
+    --secondary-bg: #2C2C2C;
+    --white-45: rgba(255, 255, 255, .45);
+    --font-medium: 500;
+    --font-light: 200;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.freeze {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.black {
+    background-color: black;
+    opacity: .6;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.rotate-330 {
+    transform: rotate(330deg);
+}
+
+div#hamburger-menu {
+    display: none;
+
+    width: 30px;
+    height: 20px;
+    padding: 7px 6px;
+    border-radius: 6px;
+    border: 2px solid #525252;
+}
+
+div#hamburger-menu .line {
+    width: 100%;
+    height: 2px;
+    background-color: #525252;
+    border-radius: 50px;
+}
+
+section#disclaimer {
+    z-index: 10;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    background-color: white;
+    color: #111;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+section#disclaimer h1 {
+    font-size: 30px;
+}
+
+section#disclaimer p {
+    margin-top: 20px;
+}
+
+section#disclaimer button {
+    cursor: pointer;
+    color: white;
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 13px;
+    background-color: #111;
+    transition: .1s ease-in-out;
+}
+
+section#disclaimer button:hover {
+    background-color: white;
+    color: #111;
+}
+
+button.overable:hover{
+    transform: translateY(10px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+main {
+    overflow-x: hidden
+}
+
+section#first-look {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section#first-look .ornament-first-look { /* ornament */
+    width: 1075px;
+    height: 880px;
+    position: absolute;
+    top: 180px;
+    left: -190px;
+    z-index: -1;
+    background: url('../dist/assets/ornament-left-side.svg');
+}
+
+header {
+    padding: 52px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    cursor: pointer;
+}
+
+header nav a.active {
+    color: black;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+
+header nav a {
+    margin: 0 20px;
+    padding: 11px 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-weight: (--font-medium);
+}
+
+header nav a:hover {
+    color: black;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+
+section.landing {
+    margin-top: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.landing #typography h1 {
+    color: var(--white);
+    font-size: 80px;
+    margin-bottom: 35px;
+}
+
+section.landing #typography p {
+    width: 350px;
+    color: var(--white-45);
+}
+
+section.landing #typography .buttons {
+    margin-top: 50px;
+    display: flex;
+}
+
+section.landing #typography .buttons button {
+    color: white;
+    padding: 13px 27px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+section.landing #typography .buttons button:first-child {
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+}
+
+section.landing #typography .buttons button:last-child {
+    background-color: transparent;
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+section.landing #image-landing {
+    margin-right: 70px;
+    text-align: center;
+}
+
+section.landing #image-landing p {
+    color: var(--white-45);
+    margin-top: 65px;
+}
+
+section.landing #image-landing img {
+    width: 100%;
+    width: 525px;
+    transition: .8s ease-out;
+}
+
+section.landing #image-landing img:hover {
+    transform: translateY(-30px);
+}
+
+section.company-logos {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--secondary-bg);
+}
+
+section.company-logos p.data {
+    font-weight: var(--font-medium);
+    color: #7E7E7E;
+}
+
+section.company-logos #logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.company-logos #logos img {
+    opacity: .6;
+    width: 230px;
+    height: 230px;
+}
+
+section.crypto-price {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+    margin-bottom: 345px;
+}
+
+section.crypto-price img {
+    width: 45%;
+}
+
+section.crypto-price #typography {
+    margin-left: 94px;
+    margin-right: 150px;
+}
+
+section.crypto-price #typography h3 {
+    font-size: 70px;
+    color: white;
+}
+
+section.crypto-price #typography p {
+    margin-top: 25px;
+    color: var(--white-45);
+}
+
+section.crypto-price #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+    transition: .3s ease-in-out;
+}
+
+section.crypto-price .ornament-crypto-price {
+    position: absolute;
+    top: 0;
+    right: -570px;
+    width: 1163px;
+    height: 952px;
+    z-index: -1;
+    background-image: url('../dist/assets/ornament-right-side.svg');
+}
+
+section.coin-lists {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 305px;
+}
+
+section.coin-lists img {
+    width: 45%;
+    order: 2;
+}
+
+section.coin-lists #typography {
+    margin-left: 137px;
+    margin-right: 94px;
+    order: 1;
+}
+
+section.coin-lists #typography h3 {
+    font-size: 70px;
+    color: var(--white);
+}
+
+section.coin-lists #typography p {
+    margin-top: 25px;
+    color: var(--white-45);
+}
+
+section.coin-lists #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+    transition: .3s ease-in-out;
+}
+
+section.coin-lists .ornament-coin-lists {
+    position: absolute;
+    width: 1163px;
+    height: 952px;
+    left: -540px;
+    top: -100px;
+    z-index: -1;
+    background-image: url('../dist/assets/ornament-left-side.svg');
+    background-repeat: no-repeat;
+}
+
+section.exchanges {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 540px;
+}
+
+section.exchanges img {
+    width: 45%;
+}
+
+section.exchanges #typography {
+    margin-left: 94px;
+    margin-right: 150px;
+}
+
+section.exchanges #typography h3 {
+    color: var(--white);
+    font-size: 70px;
+}
+
+section.exchanges #typography p {
+    color: var(--white-45);
+}
+
+section.exchanges #typography button {
+    cursor: pointer;
+    margin-top: 260px;
+    padding: 14px 45px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    color: white;
+    font-weight: medium;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+    transition: .3s ease-in-out;
+}
+
+section.exchanges .ornament-exchanges {
+    width: 1163px;
+    height: 952px;
+    position: absolute;
+    right: -570px;
+    top: -40px;
+    z-index: -1;
+    background-image: url('../dist/assets/ornament-right-side.svg');
+}
+
+section.get-started {
+    position: relative;
+    text-align: center;
+    margin-bottom: 608px;
+}
+
+section.get-started h3 {
+    font-size: 70px;
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+section.get-started button {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 20px;
+    padding: 14px 27px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    border: none;
+    background-image: linear-gradient(-21deg, #E20CA0, #FF0000);
+    transition: .3s ease-in-out;
+}
+
+section.get-started .ornament-kiri {
+    width: 1163px;
+    height: 952px;
+    position: absolute;
+    top: -260px;
+    left: -340px;
+    z-index: -1;
+    background-image: url('../dist/assets/ornament-left-side.svg');
+    background-repeat: no-repeat;
+}
+
+section.get-started .ornament-kanan {
+    width: 1075px;
+    height: 880px;
+    position: absolute;
+    top: 220px;
+    right: -300px;
+    z-index: -1;
+    background-image: url('../dist/assets/ornament-right-side.svg');
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-bg);
+}
+
+footer .foot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .foot #logo img {
+    width: 259px;
+    cursor: pointer;
+}
+
+footer .foot #logo p {
+    margin-top: 103.5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--white-45);
+}
+
+footer .foot #content {
+    display: flex;
+}
+
+footer .foot #content .development-tools,
+footer .foot #content .developer,
+footer .foot #content .design-tools {
+    color: var(--white);
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .foot #content .development-tools a,
+footer .foot #content .developer a,
+footer .foot #content .design-tools a {
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+} 
+
+footer .foot #content .development-tools,
+footer .foot #content .developer {
+    margin-right: 100px;
+}
+
+footer .foot #content div .list a{
+    display: block;
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+
+    /* Section Header */
+    header {
+        padding: 35px 0;
+    }
+
+    header nav a {
+        margin: 0 5px;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+
+    /* Section Landing */
+    section.landing {
+        margin-top: 100px;
+
+    }
+    
+    section.landing #typography h1 {
+        width: 300px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    section.landing #typography p {
+        font-size: 14px;
+    }
+
+    section.landing #typography .buttons {
+        width: fit-content;
+    }
+
+    section.landing #typography .buttons button {
+        font-size: 13px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    section.landing #image-landing {
+        margin-right: 0px;
+    }
+
+    section.landing #image-landing img {
+        width: 366px;
+        height: 312px;
+    }
+
+    section.landing #image-landing p {
+        font-size: 14px;
+    }
+
+    section#first-look .ornament-first-look {
+        top: 150px;
+        left: -270px;
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    section#first-look .ornament-kanan {
+        top: 600px;
+        right: -180px;
+        position: absolute;
+        background-image: url('../dist/assets/2-line-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Section Company Logos */
+    section.company-logos {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    section.company-logos #logos img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section.company-logos #logos p.data {
+        font-size: 16px;
+    }
+
+
+    /* Section Crypto Price */
+    section.crypto-price img {
+        width: 340px;
+        height: 347px;
+    }
+
+    section.crypto-price #typography {
+        margin-right: 0px;
+    }
+
+    section.crypto-price #typography h3 {
+        font-size: 45px;
+    }
+
+    section.crypto-price #typography p {
+        font-size: 12px;
+        margin-top: 18px;
+    }
+
+    section.crypto-price #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.crypto-price .ornament-crypto-price {
+        width: 664px;
+        height: 527px;
+        top: -60px;
+        right: -350px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    /* Section Coin Lists */
+    section.coin-lists img {
+        width: 334px;
+        height: 339px;
+    }
+
+    section.coin-lists #typography {
+        margin-left: 0px;
+    }
+
+    section.coin-lists #typography h3 {
+        font-size: 45px;
+    }
+
+    section.coin-lists #typography p {
+        margin-top: 18px;
+        font-size: 12px;
+    }
+
+    section.coin-lists #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.coin-lists .ornament-coin-lists {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        left: -310px;
+        top: -70px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    
+    /* Section Exchanges */
+    section.exchanges img {
+        width: 334px;
+        height: 339px;
+    }
+
+    section.exchanges #typography {
+        margin-right: 0px;
+    } 
+
+    section.exchanges #typography h3 {
+        font-size: 45px;
+    }
+
+    section.exchanges #typography p {
+        margin-top: 18px;
+        font-size: 12px;
+    }
+
+    section.exchanges #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.exchanges .ornament-exchanges {
+        width: 644px;
+        height: 527px;
+        top: -40px;
+        right: -310px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    /* Section Get Started Now */
+    section.get-started h3 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    section.get-started button {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+
+    section.get-started .ornament-kiri {
+        width: 664px;
+        height: 527px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    section.get-started .ornament-kiri {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        top: -260px;
+        left: -200px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    section.get-started .ornament-kanan {
+        width: 644px;
+        height: 527px;
+        top: 200px;
+        right: -250px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Footer Section */
+    footer .foot #logo img {
+        width: 178px;
+    }
+
+    footer .foot #logo p {
+        font-size: 12px;
+    }
+
+    footer .foot #content .development-tools h4,
+    footer .foot #content .developer h4,
+    footer .foot #content .design-tools h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    footer .foot #content .development-tools a,
+    footer .foot #content .developer a,
+    footer .foot #content .design-tools a {
+        font-size: 12px;
+    }
+
+    footer .foot #content .development-tools,
+    footer .foot #content .developer {
+        margin-right: 50px;
+    }
+
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 425px) and (max-width: 768px) {
+  
+    /* Section Header */
+    header img {
+        width: 177px;
+    }
+
+    header {
+        padding: 35px 0;
+    }
+
+    header nav a {
+        margin: 0 5px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    section#first-look {
+        height: fit-content;
+    }
+
+    /* Section Landing */
+    section.landing {
+        margin-top: 100px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    section.landing #typography h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    section.landing #typography p {
+        font-size: 14px;
+    }
+
+    section.landing #typography .buttons {
+        width: fit-content;
+    }
+
+    section.landing #typography .buttons button {
+        font-size: 13px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    section.landing #image-landing {
+        margin: 70px auto;
+    }
+
+    section.landing #image-landing img {
+        width: 366px;
+        height: 312px;
+    }
+
+    section.landing #image-landing p {
+        font-size: 14px;
+    }
+
+    section#first-look .ornament-first-look {
+        top: 150px;
+        left: -270px;
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    section#first-look .ornament-kanan {
+        top: 900px;
+        right: -180px;
+        position: absolute;
+        background-image: url('../dist/assets/2-line-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Section Company Logos */
+    section.company-logos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    section.company-logos #logos img {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    section.company-logos #logos p.data {
+        font-size: 14px;
+    }
+
+
+    /* Section Crypto Price */
+    section.crypto-price img {
+        width: 292px;
+        height: 298px;
+    }
+
+    section.crypto-price #typography {
+        margin-right: 0px;
+    }
+
+    section.crypto-price #typography h3 {
+        font-size: 35px;
+    }
+
+    section.crypto-price #typography p {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    section.crypto-price #typography button {
+        margin-top: 100px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.crypto-price .ornament-crypto-price {
+        width: 552px;
+        height: 492px;
+        top: -60px;
+        right: -350px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    /* Section Coin Lists */
+    section.coin-lists img {
+        width: 292px;
+        height: 298px;
+    }
+
+    section.coin-lists #typography {
+        margin-left: 0px;
+    }
+
+    section.coin-lists #typography h3 {
+        font-size: 35px;
+    }
+
+    section.coin-lists #typography p {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    section.coin-lists #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.coin-lists .ornament-coin-lists {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        left: -430px;
+        top: -70px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    
+    /* Section Exchanges */
+    section.exchanges {
+        margin-bottom: 400px;
+    }
+
+    section.exchanges img {
+        width: 292px;
+        height: 298px;
+    }
+
+    section.exchanges #typography {
+        margin-right: 0px;
+    } 
+
+    section.exchanges #typography h3 {
+        font-size: 35px;
+    }
+
+    section.exchanges #typography p {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    section.exchanges #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.exchanges .ornament-exchanges {
+        width: 644px;
+        height: 527px;
+        top: -40px;
+        right: -430px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    /* Section Get Started Now */
+    section.get-started {
+        margin-bottom: 400px;
+    }
+
+    section.get-started h3 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    section.get-started button {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+
+    section.get-started .ornament-kiri {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        top: -260px;
+        left: -350px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    section.get-started .ornament-kanan {
+        width: 644px;
+        height: 527px;
+        top: 200px;
+        right: -350px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Footer Section */
+    footer .foot #logo img {
+        width: 178px;
+    }
+
+    footer .foot #logo p {
+        font-size: 12px;
+    }
+
+    footer .foot #content .development-tools h4,
+    footer .foot #content .developer h4,
+    footer .foot #content .design-tools h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    footer .foot #content .development-tools a,
+    footer .foot #content .developer a,
+    footer .foot #content .design-tools a {
+        font-size: 12px;
+    }
+
+    footer .foot #content .development-tools,
+    footer .foot #content .developer {
+        margin-right: 50px;
+    }
+    
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    div#hamburger-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  
+    /* Section Header */
+    header img {
+        width: 177px;
+    }
+
+    header {
+        padding: 35px 0;
+        position: relative;
+    }
+
+    @keyframes animate-down {
+        0% {
+            top: -90vw
+        }
+
+        100% {
+            top: 50vw;
+        }
+    }
+
+    header nav {
+        width: 100%;
+        padding: 30px 5px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50vw;
+        left: 0;
+        border-radius: 20px;
+        background-color: white;
+        display: none;
+        place-items: center;
+        z-index: 2;
+        animation: animate-down 1s ease-in-out;
+    }
+
+    header nav a {
+        color: #111;
+        display: block;
+        margin: 30px;
+    }
+
+    div#hamburger-menu {
+        z-index: 2;
+    }
+
+    div#hamburger-menu .first {
+        transform-origin: 25% 70%;
+    }
+
+    div#hamburger-menu .last {
+        transform-origin: 25% 70%;
+    }
+
+    div#hamburger-menu div {
+        transition: 1s ease-in-out;
+        opacity: 1;
+    }
+
+    div#hamburger-menu .first.miring-first {
+        margin-left: 5px;
+        transform: rotate(40deg);
+    }
+    @keyframes animate-fade {
+        0%{
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    div#hamburger-menu .middle.hidden {
+        opacity: 0;
+        transform: translateX(300px);
+        animation: animate-fade 1s ease-in-out;
+    }
+    div#hamburger-menu .last.miring-last {
+        margin-left: 5px;
+        transform: rotate(-40deg);
+    }
+
+    section#first-look {
+        height: fit-content;
+    }
+
+    /* Section Landing */
+    section.landing {
+        margin-top: 100px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    section.landing #typography h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    section.landing #typography p {
+        font-size: 14px;
+    }
+
+    section.landing #typography .buttons {
+        width: fit-content;
+    }
+
+    section.landing #typography .buttons button {
+        font-size: 13px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    section.landing #image-landing {
+        margin: 70px auto;
+    }
+
+    section.landing #image-landing img {
+        width: 344px;
+        height: 312px;
+    }
+
+    section.landing #image-landing p {
+        font-size: 14px;
+    }
+
+    section#first-look .ornament-first-look {
+        top: 150px;
+        left: -350px;
+        background-image: url('../dist/assets/ornament-landing-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    section#first-look .ornament-kanan {
+        top: 900px;
+        right: -180px;
+        position: absolute;
+        background-image: url('../dist/assets/2-line-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Section Company Logos */
+    section.company-logos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    section.company-logos #logos img {
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    section.company-logos #logos p.data {
+        font-size: 14px;
+    }
+
+
+    /* Section Crypto Price */
+    section.crypto-price{
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+
+    section.crypto-price img {
+        width: 100%;
+        height: 352px;
+    }
+
+    section.crypto-price #typography {
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+
+    section.crypto-price #typography h3 {
+        font-size: 45px;
+    }
+
+    section.crypto-price #typography p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    section.crypto-price #typography button {
+        margin-top: 88px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.crypto-price .ornament-crypto-price {
+        width: 552px;
+        height: 492px;
+        top: 380px;
+        right: -350px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+    /* Section Coin Lists */
+    section.coin-lists {
+        align-items: flex-end;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    section.coin-lists img {
+        width: 100%;
+        height: 352px;
+        order: 1;
+    }
+
+    section.coin-lists #typography {
+        order: 2;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    section.coin-lists #typography h3 {
+        font-size: 45px;
+    }
+
+    section.coin-lists #typography p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    section.coin-lists #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.coin-lists .ornament-coin-lists {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        left: -430px;
+        top: 380px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    
+    /* Section Exchanges */
+    section.exchanges {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 400px;
+    }
+
+    section.exchanges img {
+        width: 100%;
+        height: 352px;
+    }
+
+    section.exchanges #typography {
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-right: 0px;
+    } 
+
+    section.exchanges #typography h3 {
+        font-size: 45px;
+    }
+
+    section.exchanges #typography p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    section.exchanges #typography button {
+        margin-top: 98px;
+        font-size: 12px;
+        padding: 8px 27px;
+        border-radius: 7px;
+    }
+
+    section.exchanges .ornament-exchanges {
+        width: 644px;
+        height: 527px;
+        top: 380px;
+        right: -430px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    /* Section Get Started Now */
+    section.get-started {
+        margin-bottom: 400px;
+    }
+
+    section.get-started h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    section.get-started button {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+
+    section.get-started .ornament-kiri {
+        transform: scaleX(-1);
+        width: 644px;
+        height: 527px;
+        top: -200px;
+        left: -400px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+    }
+
+    section.get-started .ornament-kanan {
+        width: 644px;
+        height: 527px;
+        top: 130px;
+        right: -480px;
+        background-image: url('../dist/assets/ornament-section-tablet.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    /* Footer Section */
+    footer .foot {
+        padding: 10px;
+    }
+
+    footer .foot #logo {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .foot #logo img {
+        width: 178px;
+    }
+
+    footer .foot #logo p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    footer .foot #content {
+        margin-left: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .foot #content div .list {
+        margin-top: 5px;
+    }
+
+    footer .foot #content .developer,
+    footer .foot #content .design-tools {
+        margin-top: 50px;
+    }
+
+    footer .foot #content .development-tools h4,
+    footer .foot #content .developer h4,
+    footer .foot #content .design-tools h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    footer .foot #content .development-tools a,
+    footer .foot #content .developer a,
+    footer .foot #content .design-tools a {
+        font-size: 12px;
+    }
+    
+}

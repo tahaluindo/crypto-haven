@@ -1,0 +1,30 @@
+{
+  "name": "crypto-haven",
+  "version": "1.0.0",
+  "description": "A Web Fetch Crypto's Price",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnwncpta/crypto-haven.git"
+  },
+  "author": "gnwncpta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnwncpta/crypto-haven/issues"
+  },
+  "homepage": "https://github.com/gnwncpta/crypto-haven#readme",
+  "devDependencies": {
+    "animejs": "^3.2.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
